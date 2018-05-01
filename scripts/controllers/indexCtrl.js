@@ -1,5 +1,6 @@
 angular.module("project").controller("indexCtrl", ["$scope", "$http", "$rootScope", "$location", 'restService', 'postService', 'authService', function ($scope, $http, $rootScope, $location, restService, postService, authService) {
 
+    var id = "l";
     $scope.route = function (route) {
         return route === $location.path();
     };
@@ -16,7 +17,16 @@ angular.module("project").controller("indexCtrl", ["$scope", "$http", "$rootScop
         return authService.isRestaurant($location.path());
     }
 
-    $('.navbar-nav>li>a').on('click', function(){
-        $('.navbar-collapse').collapse('hide');
-    });
+    $scope.scroll = function (i) {
+        id = "section" + i;
+        document.getElementById(id).scrollIntoView();
+    }
+
+    $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+        if (id != "l") {
+            document.getElementById(id + "l").className = "";
+            window.location.reload();
+            id = "l";
+        }
+    })
 }]);

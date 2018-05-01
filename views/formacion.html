@@ -1,0 +1,138 @@
+<div id="section1" class="container-fluid">
+    <div class="col-md-6 index1" id="index1">
+        <a href="#/training" type="button" class="btn btn-primary button1">FORMACIÓN</a>
+    </div>
+    <div class="col-md-6 index1" id="index2">
+        <a href="#/work" type="button" class="btn btn-primary button1">TRABAJO</a>
+    </div>
+</div>
+
+<div id="section2" class="container-fluid text-center">
+    <h2>SERVICIOS</h2>
+    <h4>¿Qué ofrecemos?</h4>
+    <br>
+    <div class="row slideanim">
+        <div class="col-sm-4 center">
+            <i class="material-icons logo-small">work</i>
+            <h4>LABORAL</h4>
+            <p>Ayudas y bonificaciones, tipos de contratos, ...</p>
+        </div>
+        <div class="col-sm-4 center">
+            <i class="material-icons logo-small">people</i>
+            <h4>SELECCIÓN PERSONAL</h4>
+            <p>Captación de candidatos , entrevistas, pruebas, ...</p>
+        </div>
+        <div class="col-sm-4 center">
+            <span class="glyphicon glyphicon-wrench logo-small"></span>
+            <h4>SERVICIOS TÉCNICOS</h4>
+            <p>Proyectos empresariales, APPCC, PRL, LOPD, ...</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+        <div class="col-sm-4 center">
+            <i class="material-icons logo-small">library_books</i>
+            <h4>FORMACIÓN PRESENCIAL</h4>
+            <p>Cursos especializados teórico-prácticos</p>
+        </div>
+        <div class="col-sm-4 center">
+            <i class="material-icons logo-small">computer</i>
+            <h4>TELEFORMACIÓN</h4>
+            <p>+ de <strong>2.000</strong> cursos on-line</p>
+        </div>
+        <div class="col-sm-4 center">
+            <i class="material-icons logo-small">gavel</i>
+            <h4>FORMACIÓN BONIFICADA</h4>
+            <p>Bonificada para empresas a través de FUNDAE</p>
+        </div>
+    </div>
+</div>
+
+<div id="section3" class="container-fluid">
+    <div class="row about">
+        <div class="col-sm-8">
+            <h2 class="services">Sobre Nosotros</h2><br>
+            <p><strong>GRUPO GALLEGA LABORAL</strong> es una compañía joven, con espíritu emprendedor y un único afán:
+                procurar el máximo desarrollo individual y profesional de cada persona, aportando nuevas soluciones y
+                alternativas a todo proceso de intermediación laboral, desarrollo empresarial o actividad formativa.</p>
+            <p>Directivos, trabajadores desempleados, trabajadores en activo, empresarios, estudiantes o cualquier
+                persona con necesidades laborales, formativas, o de desarrollo empresarial, podrán comprobar la
+                dedicación, la pasión y el esfuerzo que todo el equipo humano de <strong>GRUPO GALLEGA LABORAL</strong>
+                pone en cada proceso que realiza, buscando siempre el mayor grado posible de eficacia y satisfacción en
+                sus clientes.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+            <span class="glyphicon glyphicon-signal logo1"></span>
+        </div>
+    </div>
+</div>
+
+<div id="section4" class="container-fluid">
+    <div class="row">
+
+        <div class="container col-md-6">
+            <h3>COESCO</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" data-target="#estrada">A Estrada</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="estrada" class="tab-pane fade in active">
+                    <h4>Información de Contacto</h4>
+
+                    <address> Formación: 986 58 12 80 | <a href="mailto:cursos@pontempleo.com">cursos@pontempleo.com</a>
+                    </address>
+
+                    <address> Atención a Empresas: 607 16 59 66 | <a href="mailto:empresas@coescoformacion.com">empresas@coescoformacion.com</a>
+                    </address>
+
+                    <b>
+                        <address> Rúa San Paio, 21, 36680 - A Estrada | Telf.: 986 57 20 25
+                        </address>
+                    </b>
+
+                    <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1233.0097504453759!2d-8.490942164424172!3d42.690846639007894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a6aabbe64a39d19!2sCOESCO+-+Centro+de+Orientaci%C3%B3n+de+Estudios+Comerciales+SLU!5e0!3m2!1ses!2ses!4v1525196804472"
+                            width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <form ng-submit="submitContact()" id="myForm" role="form" name="myForm">
+            <div class="col-md-6 form-line">
+                <h3>Formulario de contacto</h3>
+                <div class="form-group">
+                    <label for="nameForm">Nombre *</label>
+                    <input type="text" ng-model="nameForm" class="form-control" id="nameForm" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ng-model="email"
+                           class="form-control" id="email" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nº de teléfono *</label>
+                    <input type="text" pattern="[6789][0-9]{8}" ng-model="phone" class="form-control" id="phone"
+                           placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Mensaje *</label>
+                    <textarea class="form-control" ng-model="description" id="description"
+                              placeholder="Escribe su mensaje" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="privacidad" value="false" required> He leído y acepto la <a
+                        href="#/privacidad" target="_blank">política de privacidad</a> *
+                </div>
+                <p>* Campos obligatorios</p>
+                <div>
+                    <button type="submit" class="btn btn-danger" ng-click="resetContact()">
+                        Reset
+                    </button>
+                    <button type="submit" class="btn btn-default submit">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

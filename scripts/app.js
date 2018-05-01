@@ -5,17 +5,9 @@ angular.module("project", ['ngRoute', 'angularSpinners', 'ngCookies']);
 angular.module("project").config(["$routeProvider", function ($routeProvider) {
     //Routing
     $routeProvider
-        .when("/dashboard", {
+        .when("/formacion", {
             controller: "dashboardCtrl",
-            templateUrl: "views/dashboard.html"
-        })
-        .when("/modifyCourse", {
-              controller: "modifyCourseCtrl",
-              templateUrl: "views/modifyCourse.html"
-        })
-        .when("/newCourse", {
-             controller: "newCourseCtrl",
-             templateUrl: "views/newCourse.html"
+            templateUrl: "views/formacion.html"
         })
         .when("/legal", {
               templateUrl: "views/legal.html"
@@ -27,8 +19,7 @@ angular.module("project").config(["$routeProvider", function ($routeProvider) {
               controller: "loginCtrl",
               templateUrl: "views/login.html"
         })
-        .otherwise("/index");
-
+        .otherwise("/formacion");
 
 }])
     .run(['$rootScope', '$location', '$cookieStore', '$http', 'authService', function ($rootScope, $location, $cookieStore, $http, authService) {
