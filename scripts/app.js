@@ -6,7 +6,7 @@ angular.module("project").config(["$routeProvider", function ($routeProvider) {
     //Routing
     $routeProvider
         .when("/formacion", {
-            controller: "dashboardCtrl",
+            controller: "formacionCtrl",
             templateUrl: "views/formacion.html"
         })
         .when("/legal", {
