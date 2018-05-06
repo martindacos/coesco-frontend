@@ -25,7 +25,7 @@ nav {
   height:83px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .logo {
     width:300px;
     height:56px;
@@ -65,18 +65,6 @@ nav {
   }
 }
 
-@media screen and (min-width: 990px) {
-  .panelT {
-      height:430px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .panelT {
-      height:400px;
-  }
-}
-
 .equal {
   display: flex;
   display: -webkit-flex;
@@ -89,7 +77,7 @@ div {
 }
 
 footer {
-  background-color: #ec8013;
+  background-color: #ffbb33;
 }
 
 /* navbar */
@@ -153,21 +141,33 @@ footer {
     /* Rayitas cuadrado coalesce */
     background-color: #CCC;
 }
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-          color: #333;
-    }
-}
 
-@media only screen and (max-width: 768px) {
+ul.nav { margin-left : 35px; }
+
+@media only screen and (max-width: 767px) {
     .navbar-default .navbar-collapse {
     /* Fondo barra navegación coalesce */
-    background-color: #f58d18;
-    border-color: #FFA500;
+        background-color: #0d2f73;
+     }
+     .navbar-default .navbar-nav > li > a {
+         color: #ffffff;
+     }
+     /* Cuando paso el ratón por encima */
+     .navbar-default .navbar-nav > li > a:hover,
+     .navbar-default .navbar-nav > li > a:focus {
+         color: #fff;
+         background-color: #ffbb33;
+     }
+     /* Cuando el enlace está seleccionado */
+     .navbar-default .navbar-nav > .active > a,
+     .navbar-default .navbar-nav > .active > a:hover,
+     .navbar-default .navbar-nav > .active > a:focus {
+         color: #fff;
+         background-color: #ffbb33;
+     }
+     ul.nav {
+        margin : 0px;
+        padding : 0px;
      }
  }
 
@@ -284,7 +284,7 @@ body {
 }
 
 #section1 {padding-top:50px;background-color: #0d2f73;}
-#section2 {padding-top:80px;background-color: #fff;}
+#section2 {padding-top:80px;margin-left:20px;margin-right:20px;background-color: #fff;}
 #section3 {padding-top:50px;padding-bottom:20px;color:#fff;background-color: #0d2f73;}
 #section4 {padding-top:50px;margin-left:30px;margin-right:30px;background-color: #fff;}
 
@@ -292,8 +292,6 @@ body {
    text-align: center;
    font-size: 18px;
 }
-
-ul.nav { margin-left : 35px; }
 
 p {
    font-size: 14px;
@@ -306,4 +304,22 @@ p {
 .footerA {
     padding: 40px;
     display: inline;
+}
+
+.calendar {
+     min-height: 400px;
+}
+
+/* Cuando paso el ratón por encima */
+.for > a:hover,
+.for > a:focus {
+    color: #fff;
+    background-color: #0d2f73;
+}
+/* Cuando el enlace está seleccionado */
+.for > .active > a,
+.for > .active > a:hover,
+.for > .active > a:focus {
+    color: #fff;
+    background-color: #0d2f73;
 }

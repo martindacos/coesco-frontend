@@ -1,6 +1,6 @@
 <div id="section2" class="container-fluid">
     <div class="row text-center">
-        <h2>Cursos Presenciales</h2>
+        <h2>Próximos Cursos Presenciales</h2>
 
         <!--No offers message-->
         <h5 ng-if="courses.length < 1">
@@ -40,40 +40,64 @@
         </div>
     </div>
 
+    <div class="row text-center">
+        <ul class="pagination">
+            <li id="page{{page}}" ng-class="{true: 'active'}[page == 1]" ng-repeat="page in pages">
+                <a ng-click="get(page)">{{page}}</a>
+            </li>
+        </ul>
+    </div>
+
     <div class="row">
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 text-center calendar">
+            <h3>Próximos Eventos</h3>
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=400&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=es.spain%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;ctz=Europe%2FMadrid"
+                    style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="col-sm-1">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-5 text-center">
             <h3>Formación para adultos</h3>
-            <ul class="list-group">
-                <li class="list-group-item">CERTIFICADOS DE PROFESIONALIDAD</li>
-                <li class="list-group-item">CAP (Certificados de Aptitud Profesional)</li>
-                <li class="list-group-item">IDIOMAS</li>
-                <li class="list-group-item">DACTILOGRAFÍA</li>
-                <li class="list-group-item">NUEVAS TECNOLOGÍAS</li>
-                <li class="list-group-item">ADMINISTRACIÓN Y GESTIÓN</li>
-                <li class="list-group-item">HOSTELERÍA</li>
-                <li class="list-group-item">COMERCIO</li>
-                <li class="list-group-item">INDUSTRIA</li>
-                <li class="list-group-item">OFICIOS</li>
-                <li class="list-group-item">AGROGANADERÍA</li>
-                <li class="list-group-item">SANIDAD</li>
-                <li class="list-group-item">SALUD Y BINIESTAR</li>
+            <ul class="list-group for">
+                <a href="" class="list-group-item list-group-item-action">CERTIFICADOS DE PROFESIONALIDAD</a>
+                <a href="#" class="list-group-item list-group-item-action">CAP (Certificados de Aptitud Profesional)</a>
+                <a href="#" class="list-group-item list-group-item-action">IDIOMAS</a>
+                <a href="#" class="list-group-item list-group-item-action">DACTILOGRAFÍA</a>
+                <a href="#" class="list-group-item list-group-item-action">NUEVAS TECNOLOGÍAS</a>
+                <a href="#" class="list-group-item list-group-item-action">ADMINISTRACIÓN Y GESTIÓN</a>
+                <a href="#" class="list-group-item list-group-item-action">HOSTELERÍA</a>
+                <a href="#" class="list-group-item list-group-item-action">COMERCIO</a>
+                <a href="#" class="list-group-item list-group-item-action">INDUSTRIA</a>
+                <a href="#" class="list-group-item list-group-item-action">OFICIOS</a>
+                <a href="#" class="list-group-item list-group-item-action">AGROGANADERÍA</a>
+                <a href="#" class="list-group-item list-group-item-action">SANIDAD</a>
+                <a href="#" class="list-group-item list-group-item-action">SALUD Y BINIESTAR</a>
             </ul>
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-5 text-center">
             <h3>Formación para niños y adolescentes</h3>
-            <ul class="list-group">
-                <li class="list-group-item">REFUERZO EDUCATIVO</li>
-                <li class="list-group-item">IDIOMAS</li>
-                <li class="list-group-item">MECANOGRAFÍA</li>
-                <li class="list-group-item">NUEVAS TECNOLOGÍAS</li>
-                <li class="list-group-item">DESARROLLO MUSICAL</li>
-                <li class="list-group-item">DESARROLLO ARTÍSTICO</li>
-                <li class="list-group-item">DESARROLLO FÍSICO Y DEPORTIVO</li>
-                <li class="list-group-item">E-SPORTS</li>
-                <li class="list-group-item">CIVISIMO</li>
-                <li class="list-group-item">CIENCIA PARA JÓVENES</li>
-                <li class="list-group-item">OFICIOS PARA PRINCIPIANTES</li>
+            <ul class="list-group for">
+                <a href="#" class="list-group-item list-group-item-action">REFUERZO EDUCATIVO</a>
+                <a href="#" class="list-group-item list-group-item-action">IDIOMAS</a>
+                <a href="#" class="list-group-item list-group-item-action">MECANOGRAFÍA</a>
+                <a href="#" class="list-group-item list-group-item-action">NUEVAS TECNOLOGÍAS</a>
+                <a href="#" class="list-group-item list-group-item-action">DESARROLLO MUSICAL</a>
+                <a href="#" class="list-group-item list-group-item-action">DESARROLLO ARTÍSTICO</a>
+                <a href="#" class="list-group-item list-group-item-action">DESARROLLO FÍSICO Y DEPORTIVO</a>
+                <a href="#" class="list-group-item list-group-item-action">E-SPORTS</a>
+                <a href="#" class="list-group-item list-group-item-action">CIVISIMO</a>
+                <a href="#" class="list-group-item list-group-item-action">CIENCIA PARA JÓVENES</a>
+                <a href="#" class="list-group-item list-group-item-action">OFICIOS PARA PRINCIPIANTES</a>
             </ul>
+        </div>
+        <div class="col-sm-1">
         </div>
     </div>
 </div>
