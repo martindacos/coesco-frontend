@@ -19,7 +19,12 @@ angular.module("project").controller("indexCtrl", ["$scope", "$http", "$rootScop
 
     $scope.scroll = function (i) {
         id = "section" + i;
-        document.getElementById(id).scrollIntoView();
+        var element = document.getElementById(id);
+        if (element != null) {
+            element.scrollIntoView();
+        } else {
+            $location.path("/formacion#" + id);
+        }
     }
 
     $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
