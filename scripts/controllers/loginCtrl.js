@@ -10,7 +10,7 @@ angular.module("project").controller('loginCtrl', ['$scope', '$rootScope', '$loc
               document.getElementById('loginForm').reset();
               authService.SetCredentials($scope.email, $scope.pass);
               swal('OK', 'Sesión iniciada correctamente','success')
-              $location.path('/modifyOffer');
+              $location.path('/newCourse');
         }, function error(response) {
               swal('Error!', 'Autenticación incorrecta', 'error');
         });

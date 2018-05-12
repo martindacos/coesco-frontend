@@ -9,15 +9,13 @@ angular.module("project").config(["$routeProvider", function ($routeProvider) {
             controller: "formacionCtrl",
             templateUrl: "views/formacion.html"
         })
-        .when("/legal", {
-              templateUrl: "views/legal.html"
-        })
-        .when("/privacidad", {
-              templateUrl: "views/privacidad.html"
-        })
         .when("/login", {
               controller: "loginCtrl",
               templateUrl: "views/login.html"
+        })
+        .when("/newCourse", {
+              controller: "newCourseCtrl",
+              templateUrl: "views/newCourse.html"
         })
         .otherwise("/formacion");
 

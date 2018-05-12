@@ -65,5 +65,10 @@ angular.module("project").controller("formacionCtrl", ["$scope", "$http", "$loca
                 $scope.get(1);
             }
 
+            $scope.setCourse = function(name){
+                //console.log(inscription);
+                var myEl = angular.element( document.querySelector( '#title' ) );
+                myEl.html(name);
+            };
 
             }]);
