@@ -82,4 +82,22 @@ angular.module("project").service("postService", ["$http", "$rootScope", "$locat
             });
 
         };
+
+        //Delete Course
+            this.deleteCourse = function (uploadUrl, ref) {
+
+                //Set config
+                var config = {
+                    headers: {
+                        'Content-Type': undefined
+                    },
+                    transformRequest: angular.identity
+                };
+
+                //Promise
+                return $http.post(uploadUrl + ref, config).then(function (response) {
+                    return (response);
+                });
+
+            };
 }]);

@@ -62,7 +62,7 @@ $scope.resetNewCourse = function(){
             //Set vars
             var deleteUrl = restService.url + 'deleteCourse/' + ref + "?auth=";
 
-            postService.deleteOffer(deleteUrl, id)
+            postService.deleteCourse(deleteUrl, id)
             .then(function success(response) {
                 swal('OK', 'Curso eliminado correctamente','success')
                 $scope.get();
