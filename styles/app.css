@@ -55,13 +55,13 @@ nav {
 
 @media screen and (min-width: 990px) {
   .panelC {
-      height:500px;
+      height:550px;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .panelC {
-      height:450px;
+      height:500px;
   }
 }
 
@@ -171,7 +171,7 @@ ul.nav { margin-left : 35px; }
         margin : 0px;
         padding : 0px;
      }
- }
+ } */
 
 #description {
     resize: none;
@@ -311,4 +311,58 @@ p {
 .for > .active > a:focus {
     color: #fff;
     background-color: #0d2f73;
+}
+
+.img-fluid {
+    width: 100%;
+    max-height: 900px;
+    min-height: 300px;
+}
+
+.eu {
+  width:88px;
+  height:80px;
+}
+
+.es {
+  width:193px;
+  height:46px;
+}
+
+.xun {
+  width:144px;
+  height:46px;
+}
+
+.esta {
+  width:321px;
+  height:51px;
+}
+
+.fun {
+  width:193px;
+  height:47px;
+}
+
+@media screen and (max-width: 500px) {
+  .eu {
+    width:44px;
+    height:40px;
+  }
+  .es {
+    width:96px;
+    height:23px;
+  }
+  .xun {
+    width:72px;
+    height:23px;
+  }
+  .esta {
+    width:160px;
+    height:25px;
+  }
+  .fun {
+    width:96px;
+    height:23px;
+  }
 }

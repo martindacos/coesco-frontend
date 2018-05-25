@@ -84,51 +84,94 @@
     <div ng-if="showNax()" ng-include="'views/adminNavbar.html'"></div>
 </header>
 
-<div ng-if="!showNax() && !route('/login') ? true : false " id="section0" class="carousel slide" data-ride="carousel" style="margin-top: 100px;">
+<div ng-if="!showNax() && !route('/login') ? true : false " id="section0" class="carousel slide" data-ride="carousel" data-interval="3000">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#section0" data-slide-to="0" class="active"></li>
         <li data-target="#section0" data-slide-to="1"></li>
         <li data-target="#section0" data-slide-to="2"></li>
+        <li data-target="#section0" data-slide-to="3"></li>
+        <li data-target="#section0" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="img/la.jpg" alt="Los Angeles" style="width:100%;">
+            <div class="carousel-caption">
+                <h2>Mecanografía</h2>
+            </div>
+            <div class="img"><img class="d-block img-fluid" src="img/alphabet.jpg" alt="First slide"></div>
         </div>
 
         <div class="item">
-            <img src="img/chicago.jpg" alt="Chicago" style="width:100%;">
+            <div class="img"><img class="d-block img-fluid" src="img/homework.jpg" alt="Refuerzo Educativo"></div>
+            <div class="carousel-caption">
+                <h2>Refuerzo Educativo</h2>
+            </div>
         </div>
 
         <div class="item">
-            <img src="img/ny.jpg" alt="New york" style="width:100%;">
+            <div class="img"><img class="d-block img-fluid" src="img/people.jpg"
+                                  alt="Certificados de Profesionalidad"></div>
+            <div class="carousel-caption">
+                <h2>Certificados de Profesionalidad</h2>
+            </div>
         </div>
+
+        <div class="item">
+            <div class="img"><img class="d-block img-fluid" src="img/office.jpg" alt="Nuevas Tecnologías"></div>
+            <div class="carousel-caption">
+                <h2>Nuevas Tecnologías</h2>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="img"><img class="d-block img-fluid" src="img/video-games.jpg" alt="E-Sports"></div>
+            <div class="carousel-caption">
+                <h2>E-Sports</h2>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a id="myBtn3" class="left carousel-control" role="button">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a id="myBtn2" class="right carousel-control" role="button">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#section0" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#section0" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
+
+
+<script>
+$(document).ready(function(){
+    // Go to the previous item
+    $("#myBtn").click(function(){
+        $("#section0").carousel("prev");
+    });
+
+    // Go to the next item
+    $("#myBtn2").click(function(){
+        $("#section0").carousel("next");
+    });
+});
+</script>
 
 <span ng-view class="main"></span>
 
 <footer style="padding-top:20px;">
+    <div class="container-fluid">
         <div class="row text-center">
             <h4>Acreditados Por:</h4>
             <ul class="acreditados">
-                <li class="footerA"><img src="img/union_europea.png" style="width:88px;height:80px;"></a></li>
-                <li class="footerA"><img src="img/gobierno_espana.png" style="width:193px;height:46px;"></a></li>
-                <li class="footerA"><img src="img/xunta.png" style="width:144px;height:46px;"></a></li>
-                <li class="footerA"><img src="img/logoEstatal.png" style="width:321px;height:51px;"></a></li>
-                <li class="footerA"><img src="img/fundacion.png" style="width:193px;height:47px;"></a></li>
+                <li class="footerA"><img src="img/union_europea.png" class="eu"></a></li>
+                <li class="footerA"><img src="img/gobierno_espana.png" class="es"></a></li>
+                <li class="footerA"><img src="img/xunta.png" class="xun"></a></li>
+                <li class="footerA"><img src="img/logoEstatal.png" class="esta"></a></li>
+                <li class="footerA"><img src="img/fundacion.png" class="fun"></a></li>
             </ul>
         </div>
         <div class="row">
@@ -149,6 +192,7 @@
                 <a class="text-right" data-toggle="modal" data-target="#legal"> Aviso Legal</a>
             </div>
         </div>
+    </div>
 </footer>
 
 </body>
