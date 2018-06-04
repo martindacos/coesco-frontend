@@ -6,7 +6,10 @@ nav {
 
 .main {
     margin-top: 100px;
-    min-width:200px;
+}
+
+.carousel {
+    margin-top: 100px !important;
 }
 
 .wrapper {
@@ -55,13 +58,25 @@ nav {
 
 @media screen and (min-width: 990px) {
   .panelC {
-      height:550px;
+      height:800px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .panelC {
+      height:750px;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .panelC {
-      height:500px;
+      height:730px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .panelC {
+      height:710px;
   }
 }
 

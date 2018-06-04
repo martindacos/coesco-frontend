@@ -13,27 +13,30 @@
         <div class="panel panelC panel-default col-md-6" ng-repeat="course in courses track by $index">
             <h3 class="panel-heading centeralign">{{course.name}}</h3>
 
-            <div class="panel-body">
-                <div class="col-md-6">
-                    <img src="data:{{course.contentType}};base64, {{course.image}}"
-                         style="width:100%;height:300px;object-fit: contain">
+            <div class="panel-body ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="data:{{course.contentType}};base64, {{course.image}}" style="width:100%;height:300px;object-fit: contain">
+                    </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
 
-                    <!--Offer data-->
-                    <div>
-                        <p ng-if="course.zone.length > 1"><b> Zona: </b> {{course.zone}}</p>
-                        <p ng-if="course.description.length > 1"><b> Descripción: </b> {{course.description}}</p>
-                        <p ng-if="course.dateIni.length > 1"><b> Fecha Inicio: </b> {{course.dateIni}}</p>
-                        <p ng-if="course.dateFin.length > 1"><b> Fecha Fin: </b> {{course.dateFin}}</p>
-                        <p ng-if="course.time.length > 1"><b> Horario: </b> {{course.time}}</p>
-                        <p ng-if="course.direction.length > 1"><b> Dirección: </b> {{course.direction}}</p>
-                    </div>
+                        <!--Offer data-->
+                        <div>
+                            <p ng-if="course.zone.length > 1"><b> Zona: </b> {{course.zone}}</p>
+                            <p ng-if="course.description.length > 1"><b> Descripción: </b> {{course.description}}</p>
+                            <p ng-if="course.dateIni.length > 1"><b> Fecha Inicio: </b> {{course.dateIni}}</p>
+                            <p ng-if="course.dateFin.length > 1"><b> Fecha Fin: </b> {{course.dateFin}}</p>
+                            <p ng-if="course.time.length > 1"><b> Horario: </b> {{course.time}}</p>
+                            <p ng-if="course.direction.length > 1"><b> Dirección: </b> {{course.direction}}</p>
+                        </div>
 
-                    <div class="text-center">
-                        <a ng-click="setCourse(course.name)" class="btn btn-primary" data-toggle="modal"
-                           data-target="#modalCourse">Solicitar</a>
+                        <div class="text-center">
+                            <a ng-click="setCourse(course.name)" class="btn btn-primary" data-toggle="modal"
+                               data-target="#modalCourse">Solicitar</a>
+                        </div>
                     </div>
                 </div>
             </div>
