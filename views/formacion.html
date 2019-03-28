@@ -32,7 +32,25 @@
                             <p ng-if="course.dateFin.length > 1"><b> Fecha Fin: </b> {{course.dateFin}}</p>
                             <p ng-if="course.time.length > 1"><b> Horario: </b> {{course.time}}</p>
                             <p ng-if="course.direction.length > 1"><b> Dirección: </b> {{course.direction}}</p>
-                        </div>
+
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2531'"><a href="http://coescoformacion.com/files/2531/PLANIFICACION_DIDACTICA_DO_CURSO_2531.pdf" target="_blank">Planificación Didáctica do Curso</a></p>
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2531'"><a href="http://coescoformacion.com/files/2531/DEREITOS_E_DEBERES_DO_ALUMNADO.pdf" target="_blank">Dereitos e Deberes do Alumnado</a></p>
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2531'"><a href="http://coescoformacion.com/files/2531/DEBERES_DOS_CENTROS.pdf" target="_blank">Deberes dos Centros</a></p>
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2531'"><a href="http://coescoformacion.com/files/2531/programa_atencion_INSTITUCIONS_2018.pdf" target="_blank">Programa Atención Institucións 2018</a></p>
+
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2696'"><a href="http://coescoformacion.com/files/2696/PLANIFICACION_DIDACTICA_DO_CURSO_2696.pdf" target="_blank">Planificación Didáctica do Curso</a></p>
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2696'"><a href="http://coescoformacion.com/files/2696/DEREITOS_E_DEBERES_DO_ALUMNADO.pdf" target="_blank">Dereitos e Deberes do Alumnado</a></p>
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2696'"><a href="http://coescoformacion.com/files/2696/DEBERES_DOS_CENTROS.pdf" target="_blank">Deberes dos Centros</a></p>
+                            <p ng-if="course.name === 'ATENCIÓN SOCIOSANITARIA A PERSOAS DEPENDENTES EN INSTITUCIÓNS 2696'"><a href="http://coescoformacion.com/files/2696/programa_atencion_INSTITUCIONS_2018.pdf" target="_blank">Programa Atención Institucións 2018</a></p>
+                        
+							<p ng-if="course.name === 'GRAVACIÓN E TRATAMENTO DE DATOS E DOCUMENTOS'"><a href="http://coescoformacion.com/files/2803/PLANIFICACION_DIDACTICA_DE_GRAVACION_DE_DATOS_20_12_18.pdf" target="_blank">Planificación Didáctica do Curso</a></p>
+                            <p ng-if="course.name === 'GRAVACIÓN E TRATAMENTO DE DATOS E DOCUMENTOS'"><a href="http://coescoformacion.com/files/2803/DEREITOS_E_DEBERES_DO_ALUMNADO.pdf" target="_blank">Dereitos e Deberes do Alumnado</a></p>
+                            <p ng-if="course.name === 'GRAVACIÓN E TRATAMENTO DE DATOS E DOCUMENTOS'"><a href="http://coescoformacion.com/files/2803/DEBERES_DOS_CENTROS.pdf" target="_blank">Deberes dos Centros</a></p>
+							
+							<p ng-if="course.name === 'ACTIVIDADES DE XESTIÓN ADMINISTRATIVA'"><a href="http://coescoformacion.com/files/2792/PLANIFICACION_DIDACTICA_CURSO_2792.pdf" target="_blank">Planificación Didáctica do Curso</a></p>
+                            <p ng-if="course.name === 'ACTIVIDADES DE XESTIÓN ADMINISTRATIVA'"><a href="http://coescoformacion.com/files/2792/DEREITOS_E_DEBERES_DO_ALUMNADO.pdf" target="_blank">Dereitos e Deberes do Alumnado</a></p>
+                            <p ng-if="course.name === 'ACTIVIDADES DE XESTIÓN ADMINISTRATIVA'"><a href="http://coescoformacion.com/files/2792/DEBERES_DOS_CENTROS.pdf" target="_blank">Deberes dos Centros</a></p>
+						</div>
 
                         <div class="text-center">
                             <a ng-click="setCourse(course.name)" class="btn btn-primary" data-toggle="modal"
@@ -116,7 +134,7 @@
                 <h2>Información de Contacto</h2>
 
                 <address> Formación: 986 57 20 25 | <a
-                        href="mailto:cursos@pontempleo.com">coesco@coescoformacion.com</a>
+                        href="mailto:coesco@coescoformacion.com">coesco@coescoformacion.com</a>
                 </address>
 
                 <address> Atención a Empresas: 607 16 59 66 | <a href="mailto:empresas@coescoformacion.com">empresas@coescoformacion.com</a>
@@ -229,7 +247,7 @@
                     acordados
                     contractualmente así como poder informarle sobre los nuevos productos y servicios</i>.
                     El tratamiento de los datos que nos facilite a través de los formularios de la web
-                    <strong>www.pontempleo.com</strong> se regirá por esta misma política de
+                    <strong>www.coescoformacion.com</strong> se regirá por esta misma política de
                     privacidad.
                     Las operaciones, gestiones y procedimientos técnicos que se realicen de forma automatizada o no
                     automatizada
@@ -305,6 +323,35 @@
                         Pontevedra)</strong>.
                     Igualmente podrá dirigirse a la <a href="http://www.agdp.es" target="_blank">Agencia Española de
                         Protección de Datos</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="calidad" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Política de calidad</h4>
+            </div>
+            <div class="modal-body">
+				<p>El objetivo del Sistema de Gestión de la Calidad implantado en COESCO - CENTRO DE ORIENTACION DE ESTUDIOS COMERCIALES, S.L., es garantizar que la organización comprende las necesidades explicitas o implícitas de sus alumnos, realizando los trabajos propios de la gestión e impartición de formación continua para trabajadores en activo, empresas y entidades públicas. Formación privada para particulares. Enseñanza de formación profesional para el empleo AFD. Formación para niños y adolescentes: refuerzo educativo, con un nivel de calidad que satisfaga sus requisitos y les proporcione satisfacción.</p>
+				<p>Por esta razón la Dirección ha establecido e implantado un Sistema de Gestión de la Calidad en base a los requisitos de la Norma UNE-EN-ISO 9001:2015. Por ello nos comprometemos a:</p>
+				<p>Facilitar a nuestros alumnos la prestación del servicio objeto de nuestra actividad cumpliendo las necesidades que ellos tienen y a ser posible excediendo sus expectativas.</p>
+				<p>Proporcionar a nuestro personal la motivación, capacitación, información, equipamiento e infraestructura que le permita desarrollar sus tareas con un nivel de eficacia óptimo.</p>
+				<p>Asegurarnos una base de proveedores con quienes trabajar en estrecha colaboración.</p>
+				<p>Evaluar de forma continua a todos nuestros proveedores en base al cumplimiento de sus compromisos.</p>
+				<p>Mejorar continuamente nuestros procesos y servicios basados en los conceptos de calidad y gestión, determinando también los medios para prevenir no conformidades y eliminar sus causas.</p>
+				<p>Cumplimiento de los requisitos ofertados a los alumnos, consolidando la confianza en COESCO - CENTRO DE ORIENTACION DE ESTUDIOS COMERCIALES, S.L., así como de los requisitos legales aplicables vigentes en el ámbito geográfico donde desarrolla su actividad y otros que la organización suscriba.</p>
+				<p>Estos objetivos son generales, y además, en las reuniones de Revisión del Sistema por la Dirección, se establecen objetivos cuantificables para un período de tiempo determinado, incluyendo las evidencias objetivas que demuestren su consecución, la persona que va a ser responsable de su ejecución y los recursos de que dispone para conseguirlos.</p>
+				<p>El aseguramiento de que todas las personas de la organización que influyen en la gestión conocen la Política del Sistema de Gestión y los objetivos planteados se consigue gracias a la difusión, por parte del Responsable de Calidad de los mismos, a todos los niveles de la organización y la distribución de los documentos que aplican a cada nivel en los distintos puestos de trabajo</p>
+				<p>En A Estrada, Pontevedra, a 4 de diciembre de 2018.</p>
+				<p>David Campos Moreira</p>
+				<p>Director de COESCO</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
